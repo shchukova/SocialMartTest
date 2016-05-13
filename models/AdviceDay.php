@@ -3,7 +3,7 @@
  * class AdviceDay
  * дневной  совет
  **/
-class AdviceDay extends Advice
+class AdviceDay extends AbstractAdvice
 {
     protected $parser;
     
