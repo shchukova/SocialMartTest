@@ -21,6 +21,10 @@ class ParserJson extends AbstractParser
     protected function parse()
     {
         $this->result = $this->parseJson($this->answer);
+        if ($this->result){
+            return true;
+        }
+        return false;
     }
     
     private function parseJson($answer)
