@@ -21,6 +21,10 @@ class ParserXml extends AbstractParser
     protected function parse()
     {
         $this->result = $this->parseXml($this->answer);
+        if ($this->result){
+            return true;
+        }
+        return false;
     }
     
     private function parseXml($answer)
